@@ -1,0 +1,6 @@
+../User/board/board.c:16:6:board_init	1
+../User/board/board.c:26:6:SystemClock_Config	4
+../User/board/board.c:73:13:MX_ADC1_Init	5
+../User/board/board.c:136:13:MX_DMA_Init	1
+../User/board/board.c:154:13:MX_GPIO_Init	1
+../User/board/board.c:175:6:Error_Handler	1
