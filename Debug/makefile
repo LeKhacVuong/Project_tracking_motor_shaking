@@ -62,8 +62,8 @@ all: main-build
 main-build: do_an_Phat.elf secondary-outputs
 
 # Tool invocations
-do_an_Phat.elf do_an_Phat.map: $(OBJS) $(USER_OBJS) C:\Users\vypa0\STM32CubeIDE\cube_sencond_workspace\do_an_Phat\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "do_an_Phat.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\vypa0\STM32CubeIDE\cube_sencond_workspace\do_an_Phat\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="do_an_Phat.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+do_an_Phat.elf do_an_Phat.map: $(OBJS) $(USER_OBJS) /home/lekhacvuong/Desktop/Project_tracking_motor_shaking/STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "do_an_Phat.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"/home/lekhacvuong/Desktop/Project_tracking_motor_shaking/STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="do_an_Phat.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
